@@ -1,0 +1,15 @@
+C:\Users\djovanov\Desktop\Dejan's DESKTOP\Projects\c-sharp-design-patterns-demo\CSharpCreationalDesingPatterns\FactoryDesignPatternDemo\obj\Debug\net6.0\FactoryDesignPatternDemo.csproj.AssemblyReference.cache
+C:\Users\djovanov\Desktop\Dejan's DESKTOP\Projects\c-sharp-design-patterns-demo\CSharpCreationalDesingPatterns\FactoryDesignPatternDemo\obj\Debug\net6.0\FactoryDesignPatternDemo.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\djovanov\Desktop\Dejan's DESKTOP\Projects\c-sharp-design-patterns-demo\CSharpCreationalDesingPatterns\FactoryDesignPatternDemo\obj\Debug\net6.0\FactoryDesignPatternDemo.AssemblyInfoInputs.cache
+C:\Users\djovanov\Desktop\Dejan's DESKTOP\Projects\c-sharp-design-patterns-demo\CSharpCreationalDesingPatterns\FactoryDesignPatternDemo\obj\Debug\net6.0\FactoryDesignPatternDemo.AssemblyInfo.cs
+C:\Users\djovanov\Desktop\Dejan's DESKTOP\Projects\c-sharp-design-patterns-demo\CSharpCreationalDesingPatterns\FactoryDesignPatternDemo\obj\Debug\net6.0\FactoryDesignPatternDemo.csproj.CoreCompileInputs.cache
+C:\Users\djovanov\Desktop\Dejan's DESKTOP\Projects\c-sharp-design-patterns-demo\CSharpCreationalDesingPatterns\FactoryDesignPatternDemo\bin\Debug\net6.0\FactoryDesignPatternDemo.exe
+C:\Users\djovanov\Desktop\Dejan's DESKTOP\Projects\c-sharp-design-patterns-demo\CSharpCreationalDesingPatterns\FactoryDesignPatternDemo\bin\Debug\net6.0\FactoryDesignPatternDemo.deps.json
+C:\Users\djovanov\Desktop\Dejan's DESKTOP\Projects\c-sharp-design-patterns-demo\CSharpCreationalDesingPatterns\FactoryDesignPatternDemo\bin\Debug\net6.0\FactoryDesignPatternDemo.runtimeconfig.json
+C:\Users\djovanov\Desktop\Dejan's DESKTOP\Projects\c-sharp-design-patterns-demo\CSharpCreationalDesingPatterns\FactoryDesignPatternDemo\bin\Debug\net6.0\FactoryDesignPatternDemo.dll
+C:\Users\djovanov\Desktop\Dejan's DESKTOP\Projects\c-sharp-design-patterns-demo\CSharpCreationalDesingPatterns\FactoryDesignPatternDemo\bin\Debug\net6.0\FactoryDesignPatternDemo.pdb
+C:\Users\djovanov\Desktop\Dejan's DESKTOP\Projects\c-sharp-design-patterns-demo\CSharpCreationalDesingPatterns\FactoryDesignPatternDemo\obj\Debug\net6.0\FactoryDesignPatternDemo.dll
+C:\Users\djovanov\Desktop\Dejan's DESKTOP\Projects\c-sharp-design-patterns-demo\CSharpCreationalDesingPatterns\FactoryDesignPatternDemo\obj\Debug\net6.0\refint\FactoryDesignPatternDemo.dll
+C:\Users\djovanov\Desktop\Dejan's DESKTOP\Projects\c-sharp-design-patterns-demo\CSharpCreationalDesingPatterns\FactoryDesignPatternDemo\obj\Debug\net6.0\FactoryDesignPatternDemo.pdb
+C:\Users\djovanov\Desktop\Dejan's DESKTOP\Projects\c-sharp-design-patterns-demo\CSharpCreationalDesingPatterns\FactoryDesignPatternDemo\obj\Debug\net6.0\FactoryDesignPatternDemo.genruntimeconfig.cache
+C:\Users\djovanov\Desktop\Dejan's DESKTOP\Projects\c-sharp-design-patterns-demo\CSharpCreationalDesingPatterns\FactoryDesignPatternDemo\obj\Debug\net6.0\ref\FactoryDesignPatternDemo.dll
