@@ -43,15 +43,11 @@ namespace FactoryDesignPatternDemo
 
             IPurchaseProviderFactory purchaseProviderFactory;
 
-            if (order.Sender.Country.ToLower() == "sweden")
-            {
-                purchaseProviderFactory = new SwedenPurchaseProviderFactory();
-            }
-            else if (order.Sender.Country.ToLower() == "australia")
-            {
-                purchaseProviderFactory = new AustraliaPurchaseProviderFactory();
-            }
-            else
+            var factoryProvider = new PurchaseProviderFactoryProvider();
+
+            purchaseProviderFactory = factoryProvider.CreateFactoryFor(order.Sender.Country);
+
+            if (purchaseProviderFactory == null)
             {
                 throw new Exception("Sender country is not available!");
             }
