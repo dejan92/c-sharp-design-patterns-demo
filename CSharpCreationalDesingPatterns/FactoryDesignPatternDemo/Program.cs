@@ -41,8 +41,22 @@ namespace FactoryDesignPatternDemo
             order.LineItems.Add(new Item("CONSULTING", "Building a website", 100m), 1);
             #endregion
 
+            IPurchaseProviderFactory purchaseProviderFactory;
+
+            if (order.Sender.Country.ToLower() == "sweden")
+            {
+                purchaseProviderFactory = new SwedenPurchaseProviderFactory();
+            }
+            else if (order.Sender.Country.ToLower() == "australia")
+            {
+                purchaseProviderFactory = new AustraliaPurchaseProviderFactory();
+            }
+            else
+            {
+                throw new Exception("Sender country is not available!");
+            }
             // Later to choose which provider factory based on some user input
-            var cart = new ShoppingCart(order, new StandardShippingProviderFactory());
+            var cart = new ShoppingCart(order, purchaseProviderFactory);
 
             var shippingLabel = cart.Finalize();
 
