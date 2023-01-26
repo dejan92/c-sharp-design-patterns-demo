@@ -4,12 +4,28 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace FactoryDesignPatternDemo.Business.Shipping
+namespace FactoryDesignPatternDemo.Business.Shipping.Factories
 {
-    public class ShippingProviderFactory
+    public abstract class ShippingProviderFactory
     {
-        public static ShippingProvider
-            CreateShippingProvider(string country)
+        public abstract ShippingProvider CreateShippingProvider(string country);
+
+        public ShippingProvider GetShippingProvider(string country)
+        {
+            var provider = CreateShippingProvider(country);
+
+            if (country.ToLower() == "sweden" && provider.InsuranceOptions.ProviderHasInsurance)
+            {
+                provider.RequireSignature = false;
+            }
+
+            return provider;
+        }
+    }
+
+    public class StandardShippingProviderFactory: ShippingProviderFactory
+    {
+        public override ShippingProvider CreateShippingProvider(string country)
         {
             ShippingProvider shippingProvider;
 
@@ -83,4 +99,13 @@ namespace FactoryDesignPatternDemo.Business.Shipping
             return shippingProvider;
         }
     }
+
+    public class GlobalExpressShippingProviderFactory : ShippingProviderFactory
+    {
+        public override ShippingProvider CreateShippingProvider(string country)
+        {
+            return new GlobalExpressShippingProvider();
+        }
+    }
 }
+    

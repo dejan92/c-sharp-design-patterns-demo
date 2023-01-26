@@ -2,6 +2,7 @@
 using FactoryDesignPatternDemo.Business;
 using System;
 using System.Net;
+using FactoryDesignPatternDemo.Business.Shipping.Factories;
 
 namespace FactoryDesignPatternDemo
 {
@@ -40,7 +41,8 @@ namespace FactoryDesignPatternDemo
             order.LineItems.Add(new Item("CONSULTING", "Building a website", 100m), 1);
             #endregion
 
-            var cart = new ShoppingCart(order);
+            // Later to choose which provider factory based on some user input
+            var cart = new ShoppingCart(order, new StandardShippingProviderFactory());
 
             var shippingLabel = cart.Finalize();
 
