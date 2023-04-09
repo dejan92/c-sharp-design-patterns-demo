@@ -7,32 +7,22 @@ namespace BuilderPatternDemo
     {
         static void Main(string[] args)
         {
-        
+
             var livingRoomBuilder = new LivingRoomBuilder();
-            livingRoomBuilder.SetSize(20);
-            livingRoomBuilder.SetColor("blue");
-            livingRoomBuilder.SetFlooring("carpet");
-            livingRoomBuilder.SetLighting("chandelier");
-            livingRoomBuilder.AddOptionalFeature("fireplace");
+            var livingRoomDirector = new RoomDirector(livingRoomBuilder);
+            livingRoomDirector.ConstructRoom(size: 20, "blue", "carpet", "chandelier", new string[] { "fireplace" });
             var livingRoom = livingRoomBuilder.GetResult();
             OutputRoomProperties(livingRoom);
 
             var bedroomBuilder = new BedroomBuilder();
-            bedroomBuilder.SetSize(15);
-            bedroomBuilder.SetColor("green");
-            bedroomBuilder.SetFlooring("hardwood");
-            bedroomBuilder.SetLighting("ceiling fan");
-            bedroomBuilder.AddOptionalFeature("walk-in closet");
-            bedroomBuilder.AddOptionalFeature("bedroom TV");
+            var bedroomDirector = new RoomDirector(bedroomBuilder);
+            bedroomDirector.ConstructRoom(size: 15, "green", "hardwood", "ceiling fan", new string[] { "walk-in closet", "bedroom TV" });
             var bedroom = bedroomBuilder.GetResult();
             OutputRoomProperties(bedroom);
 
             var bathroomBuilder = new BathroomBuilder();
-            bathroomBuilder.SetSize(10);
-            bathroomBuilder.SetColor("white");
-            bathroomBuilder.SetFlooring("tile");
-            bathroomBuilder.SetLighting("recessed lights");
-            bathroomBuilder.AddOptionalFeature("double sink");
+            var bathroomDirector = new RoomDirector(bathroomBuilder);
+            bathroomDirector.ConstructRoom(size: 10, "white", "tile", "recessed lights", new string[] { "double sink" });
             var bathroom = bathroomBuilder.GetResult();
             OutputRoomProperties(bathroom);
 
