@@ -44,7 +44,7 @@ namespace BuilderPatternDemo
     {
         void AddTitle();
         void AddDimensions();
-        void AddLogistics();
+        void AddLogistics(DateTime dateTime);
         InventoryReport GetDailyReport();
     }
 
